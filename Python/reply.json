@@ -1,0 +1,116 @@
+{
+  "ms_response": {
+    "transaction_id": null,
+    "user": {
+      "id": 769523,
+      "email": "tjsahu@gmail.com",
+      "name": "Barry Allen",
+      "user_type": "B",
+      "user_first_name": "Barry",
+      "user_last_name": "Allen",
+      "user_mention": "tjsahu",
+      "human_mention": "Barry",
+      "custom_status": null,
+      "aka": null,
+      "has_default_photo": true,
+      "photo": "",
+      "image_url": "",
+      "presence_option_id": 2,
+      "presence_string": "Offline",
+      "active_at": "1656496798832",
+      "locations": null,
+      "state": "A",
+      "photo_shape": "CIRCULAR",
+      "enable_sync": "Y",
+      "title": "Master of the Universe",
+      "followers": 53,
+      "following": 52,
+      "is_following": "false",
+      "following_me": "false",
+      "about_me": null,
+      "skill": null,
+      "expertise": null,
+      "dob": null,
+      "significant_other": null,
+      "created_at": "1652330883",
+      "time_zone": "New Delhi",
+      "share_im_link": null,
+      "domain_type": null,
+      "conversation_id": "1440722",
+      "socket_uri": null,
+      "http_uri": "172.30.154.212:8008",
+      "is_first_login": null,
+      "has_premium_account": "true",
+      "user_already_logged_in": true,
+      "comments_order": "OTN",
+      "push_url": null,
+      "user_status": {
+        "status_message": null,
+        "auto_respond_text": null,
+        "emoji": null,
+        "auto_respond": false,
+        "do_not_disturb": false,
+        "status_expire_time": null,
+        "status_set_time": null,
+        "clear_after": 0
+      },
+      "push_secondary_url": null,
+      "session_id": "6ddd19e1fbb0d7421b441529f052a68d",
+      "home_address": null,
+      "work_address": null,
+      "email_addresses": {
+        "email_address": [
+          { "location": "Work", "address": null },
+          { "location": "Home", "address": null }
+        ]
+      },
+      "phone_numbers": {
+        "phone_number": [
+          {
+            "location": "Work",
+            "mobile_number": "+91 99810 06858",
+            "landline_number": null,
+            "ext": null,
+            "fax": null
+          },
+          {
+            "location": "Home",
+            "mobile_number": null,
+            "landline_number": null,
+            "fax": null
+          }
+        ]
+      },
+      "education": {
+        "school": {
+          "name": null,
+          "degree": null,
+          "start_year": null,
+          "end_year": null
+        }
+      },
+      "experience": {
+        "company": {
+          "name": null,
+          "title": null,
+          "description": null,
+          "start_year": null,
+          "end_year": null
+        }
+      },
+      "additional_information": {
+        "additional_attributes": "[[\"34261_private\", nil]]"
+      },
+      "can_upload_photo": "true",
+      "allow_name_change": "true",
+      "level_badges": {
+        "current_level": "0",
+        "current_level_img": null,
+        "current_points": "25",
+        "total_points": "26",
+        "points_to_clear_next_level": "50",
+        "last_level": "false"
+      }
+    }
+  }
+}

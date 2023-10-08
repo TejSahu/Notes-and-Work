@@ -1,0 +1,15 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:5000"
+    networks:
+      - backend
+  redis:
+    image: "redis:alpine"
+    networks:
+      - frontend
+
+networks:
+  frontend:
+  backend:

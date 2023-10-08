@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+  labels:
+    name: myapp
+spec:
+  volumes:
+  - name: task-pv-storage
+    persistentVolumeClaim:
+      claimName: my-pvc
+  containers:
+  - name: myapp
+    image: nginx
+    volumeMounts:
+      - mountPath: "/usr/share/nginx/html"
+        name: task-pv-storage
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"

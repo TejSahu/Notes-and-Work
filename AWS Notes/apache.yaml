@@ -1,0 +1,11 @@
+---
+ - hosts: vm1 
+   tasks:
+   - name: install httpd services
+     yum: name=httpd state=latest
+  
+ - hosts: vm2
+   become_user: pod
+   tasks:
+    - name: install httpd services
+      yum: httpd state=latest

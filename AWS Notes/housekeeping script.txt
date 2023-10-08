@@ -1,0 +1,19 @@
+#!/bin/bash
+/bin/rm <location> #to remove old generated file
+file=<files containing list of folders>
+
+while read -r line
+
+#just to get the file names
+do
+echo $line
+( /usr/bin/find location/$line -type f -mtime +15 -exec ls -lrth {}; )> <user-defined location/remoldarch.list>
+
+#to remove the files present in the list above
+#echo "removing old files"; /usr/bin/find <location>/$line -type f -mtime +10 -exec rm {} \;
+
+done<$file
+
+#the file in not sorted
+echo"generating sorted list"
+/bin/sort -k 6Mr -k 7nr <location of the file>

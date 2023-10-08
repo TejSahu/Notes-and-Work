@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: Backend
+spec:
+  type: ClusterIP
+  selector: # link the services to the pods
+    app: myapp
+    type: Backend
+  ports:
+  - port: 80
+    targetPort: 80

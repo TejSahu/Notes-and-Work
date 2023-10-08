@@ -1,0 +1,34 @@
+K8s is an abstraction layer for compute instances or hardware. Containers Orchestration Software
+Containers > Manifest > Jobs
+Cloud Native apps are loosely coupled, talk to each other via API.
+Masters, Nodes, Pods, Services, Deployments
+The control plane runs on masters. Nodes do the work.
+App < Containerized < Pod < Deployments < YAML file.
+
+Masters in K8s, head nodes or control planes.
+
+kube-apiserver - front end to the control plane
+exposes API Server
+consumes JSON/YAML
+
+Cluster Store - persists cluster and config state
+Based on etcd
+Performance is critical
+
+kube-Controller-manager Node Controller
+Deployment Controller
+Endpoints/Slice Controller
+
+Kube-scheduler:
+Watches API server for new work tasks
+Affinity/Anti-Affinity
+Constraints
+Constraints
+Resources
+
+Worker Nodes:
+kubelet: main kubernetes agent, registers node with cluster, watches API server for work tasks (Pods), Executes Pods, Reports back to the masters
+container runtime: Can be docker but also supports pluggable e.g. gvisor, katacontainers takes care of low-level tasks
+kube-proxy: Networking component, Pod IP addresses, Basic load-balancing
+
+Virtual Kubelet - Nodeless kubernetes

@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  name: Task to remove a comment from a line
+  tasks:
+   - name: Uncomment a line in a configuration file
+     ansible.builtin.lineinfile:
+      path: /home/tej/testfilecomment
+      regexp: '^#\s*Hey I am commented*'
+      line: '\1'

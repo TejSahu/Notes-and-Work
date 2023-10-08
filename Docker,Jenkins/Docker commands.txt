@@ -1,0 +1,37 @@
+
+systemctl start docker; systemctl start docker; systemctl start docker; systemctl status docker
+dockerd: to run it in foreground
+dockerd --debug
+
+docker containers stats: display stats
+
+docker version:
+docker system info:
+
+docker tag jenkins:3.18 zingalatej/python:3.18
+
+docker stop $(docker ps -q) # to stop all the running containers
+
+docker system events --since 60m: to view system events since last 60 secs
+
+docker container prune: remove all stopped ones
+
+docker container run --rm ubuntu: removes after it is stopped
+
+docker container ls -l: latest container 
+
+docker pull ubuntu: will pull latest by default
+
+docker image tag httpd:alpine(source) Tej/apache:3.2(target)
+
+
+docker container run --memory=512m --memory-swap=1000m ubuntu
+    --memory-swap can be set to -1 for giving unlimited swap option.
+
+
+    --memory-reservation=100m will reserve 100m of memory
+
+docker container run --memory=512m --memory-swap=1000m --cpus=1 ubuntu will give it the defined memory and limit to 1 cpus
+
+docker container run -itd --cpuset-cpus="1" ubuntu will limit it to 1 cpu
+

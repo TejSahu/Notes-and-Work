@@ -1,0 +1,20 @@
+kubectl drain nodename --ignore-daemonsets
+
+kubectl cordon nodename
+
+kubectl uncordon nodename
+
+# Upgrade Steps
+
+apt-mark unhold kubeadm && \
+apt-get update && apt-get install -y kubeadm='1.27.0-00' && \
+apt-mark hold kubeadm
+
+apt-mark unhold kubelet kubectl && \
+apt-get update && apt-get install -y kubelet='1.27.0-00' kubectl='1.27.0-00' && \
+apt-mark hold kubelet kubectl
+
+--cert-file=/etc/kubernetes/pki/etcd/server.crt
+
+sudo apt install -f # to install depenedencies in Ubuntu
+

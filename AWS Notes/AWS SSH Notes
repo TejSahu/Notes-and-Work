@@ -1,0 +1,16 @@
+Prerequisites
+Install EC2 Instance Connect on your instance.
+
+For more information, see Set up EC2 Instance Connect.
+
+(Optional) Install an SSH client on your local computer.
+
+There is no need to install an SSH client if users only use the Amazon EC2 console (browser-based client) or the EC2 Instance Connect CLI to connect to an instance. Your local computer most likely has an SSH client installed by default. You can check for an SSH client by typing ssh at the command line. If your local computer doesn't recognize the command, you can install an SSH client. For information about installing an SSH client on Linux or macOS X, see http://www.openssh.com. For information about installing an SSH client on Windows 10, see OpenSSH in Windows.
+
+(Optional) Install the EC2 Instance Connect CLI on your local computer.
+
+There is no need to install the EC2 Instance Connect CLI if users only use the Amazon EC2 console (browser-based client) or an SSH client to connect to an instance. For more information, see Task 3: (Optional) Install the EC2 Instance Connect CLI on your computer. This connection method works for instances with public IP addresses.
+
+
+
+We need to add a subnet because you can't add an EC2 instance, which hosts the website, directly into the VPC; instances must be located in a subnet.

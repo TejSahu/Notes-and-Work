@@ -1,0 +1,9 @@
+---
+- hosts: Testservers
+  remote_user: root
+  become: true 
+  tasks:
+   - name: stop apache services
+     service:
+      name: httpd
+      state: stopped

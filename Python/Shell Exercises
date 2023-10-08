@@ -1,0 +1,89 @@
+count=0
+while [ $count -le 100 ]
+do 
+  if [ $(($count % 2)) -ne 0 ]
+    then 
+        echo $count
+    fi
+  count=$(($count+1))
+done
+
+
+find /c/Users/sahutej/Downloads -maxdepth 1 -type f -ls # find files in current directory and one more subdirectory
+
+sed -i '5d' file.txt
+
+# Count of files in a directory or current directory
+find . -maxdepth 1 -type f|wc -l # OR
+ls -ltrh|grep '^-'|wc -l
+
+sed -i "s/\\//,/g" locations.txt #to replace '\' with ','
+
+tar -zxvf config.tar.gz etc/default/sysstat # tar a single file
+
+ls -ltrh|grep "Nov 26"
+
+
+tail -f /export/applications/onyx/bootstrap/logs/bootstrap.log # continuous tailing
+
+
+/usr/bin/grep -a "Recevied duplicate UserContext" baylgab.log # treat text as Binary
+
+find ./ -type f -mtime +10 -ls -exec rm {} \; # delete files older than 10 days
+
+find ./ -name "hs_err*" -mtime +10 -ls -exec rm {} \; # brackets puts the file names in place of them for each file
+
+du -sh *|sort -hr|head -10
+
+/usr/bin/cut -d ',' -f 1,3,4,5,7,8 #with delimiter and choosing field
+
+/usr/bin/cut -c1-19 # choosing number of characters
+ 
+/bin/sort -k 6Mr -k 7nr # sort 6th and 7th column, one with month reversed and other with numerical reversed
+ 
+read name echo "Welcome $name"
+#to take input from stdin
+
+# for loop example
+for i in {1..50}
+do
+    echo $i
+done
+
+
+# input intergers and display results
+read int1
+read int2
+
+echo $((int1 + int2))
+echo $((int1 - int2))
+echo $((int1 * int2))
+echo $((int1 / int2))
+
+
+read x
+read y
+if [ $x -gt $y ]
+then
+        echo "X is greater than Y"
+
+elif [ $x -lt $y ]
+then
+        echo "X is less than Y"
+
+else
+        echo "X is equal to Y"
+fi
+
+search between two timestamps
+grep -E '2021-02-10 (08:[0-5][0-9]:[0-5][0-9]|09:00:00)' /log/infile
+
+
+# Check the connectivity to remote host, can also do remote port scan
+
+nc -zv 10.0.2.4 1234 # -z will not send packets just scan for listening daemons -v is for verbose
+
+nc -zv 10.0.2.4 1234-1300
+OR
+nmap -A 10.10.0.0 -p443 # -A gives extra information like OS version, traceroute.
+

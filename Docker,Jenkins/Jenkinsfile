@@ -1,0 +1,26 @@
+pipeline {
+    agent {
+        node{
+            label 'docker-agent-python'}
+    }
+    stages{
+        stage('Verify Branch'){
+            steps {
+                echo "$GIT_BRANCH"
+            }
+        }
+
+        stage('Build'){
+            steps{ 
+                sh 'pip3 install -r requirements.txt'
+            }
+        }
+
+        stage('Test'){
+            steps {
+                sh 'python3 Hello.py'
+            }
+        }
+    }
+
+}

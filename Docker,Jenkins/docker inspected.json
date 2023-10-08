@@ -1,0 +1,268 @@
+[
+    {
+        "Id": "ad27bd97cd0726577e062da0b7dc376adc65a4734df4e0723698b85558b232ef",
+        "Created": "2023-08-25T10:16:47.895706985Z",
+        "Path": "/usr/bin/tini",
+        "Args": [
+            "--",  
+            "/usr/local/bin/jenkins.sh"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 143,
+            "Error": "",
+            "StartedAt": "2023-09-03T13:23:58.536312213Z",
+            "FinishedAt": "2023-09-03T13:52:43.012701877Z"
+        },
+        "Image": "sha256:c23d17011fc09daeb9c5b31d606af5e540cdd86e97c162e2943227bc767cef41",
+        "ResolvConfPath": "/var/lib/docker/containers/ad27bd97cd0726577e062da0b7dc376adc65a4734df4e0723698b85558b232ef/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/ad27bd97cd0726577e062da0b7dc376adc65a4734df4e0723698b85558b232ef/hostname",
+        "HostsPath": "/var/lib/docker/containers/ad27bd97cd0726577e062da0b7dc376adc65a4734df4e0723698b85558b232ef/hosts",
+        "LogPath": "/var/lib/docker/containers/ad27bd97cd0726577e062da0b7dc376adc65a4734df4e0723698b85558b232ef/ad27bd97cd0726577e062da0b7dc376adc65a4734df4e0723698b85558b232ef-json.log",
+        "Name": "/jenkins-blueocean",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "jenkins-data:/var/jenkins_home",
+                "jenkins-docker-certs:/certs/client:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "jenkins",
+            "PortBindings": {
+                "50000/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "50000"
+                    }
+                ],
+                "8080/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8080"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "on-failure",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/3340b0ba4d106767349243ed3debf51ca2f0b0e6119fd43e3f287e39ed603fa3-init/diff:/var/lib/docker/overlay2/00d463b7605e8f5cbd1cf28e3e402210ba38985cacb6e628cfb30cafd6f236eb/diff:/var/lib/docker/overlay2/11212ae7f5bd7f72c8530d6cf3d7112ee4663441ec3dab5d9f0df3aadc51a24c/diff:/var/lib/docker/overlay2/121cdd41c40036bc13baa57f219da5adc708180f33c4cee310bfd7c744bee9a0/diff:/var/lib/docker/overlay2/d9d2b7efc44c169e2bf68f44e6a464adbedec1321d95338efd4eaebf0cf6061d/diff:/var/lib/docker/overlay2/9f67a41263f81fd4e64fbae2dac4fa0a7f44c27aab037683f9e83f6df17e3db6/diff:/var/lib/docker/overlay2/f0d2f28487f48f0d38d449b5ce2ce48635eefa769bf76eea17fbb9b375b4e569/diff:/var/lib/docker/overlay2/47a6adc361acba21f13b00209584b6cbb7f413066b00ae2f023effcaffa2df86/diff:/var/lib/docker/overlay2/576d765bbbb590858e92b1f4dded2ebfbc0b55eac86daa8e7a93eaa6032371dc/diff:/var/lib/docker/overlay2/e98c7ade1077707c649eb86c16372a51cffaa6644b6cf8620f4d992a5cc06735/diff:/var/lib/docker/overlay2/d8f1aceef4d97e06510014ef8f9303b266681a0e8b49b5feb0f637c38893b95e/diff:/var/lib/docker/overlay2/74440817efa153e3cbfb38bf8f0d9c905d5895daef14d0fc8de19bf1e2f58a59/diff:/var/lib/docker/overlay2/e1adb710072cabb844f3fd2b5a5c40f6a5cf994812bdbb1a3dbcd87175ce6ea2/diff:/var/lib/docker/overlay2/ee2ae00cb9b302caca5b64d15e56484528d290a4dad2994feb8357e6de280ce2/diff:/var/lib/docker/overlay2/0c47f8d64fb8a5a4c431be085e79461981dcf3af03dccc39ef6cf0b6f4528473/diff:/var/lib/docker/overlay2/d745593d1c965e79c485e408e9722d20a6e83332c67a67eb313e5333a028f857/diff:/var/lib/docker/overlay2/f7ca32853947fa4db6af6eedc27ae1ff776fd3c2953f716bcca450b982f78958/diff:/var/lib/docker/overlay2/2d1d93f944881a1e47a55c3f216c6a2b645620daf2242f8b1da538128ccd1365/diff",
+                "MergedDir": "/var/lib/docker/overlay2/3340b0ba4d106767349243ed3debf51ca2f0b0e6119fd43e3f287e39ed603fa3/merged",
+                "UpperDir": "/var/lib/docker/overlay2/3340b0ba4d106767349243ed3debf51ca2f0b0e6119fd43e3f287e39ed603fa3/diff",
+                "WorkDir": "/var/lib/docker/overlay2/3340b0ba4d106767349243ed3debf51ca2f0b0e6119fd43e3f287e39ed603fa3/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "jenkins-docker-certs",
+                "Source": "/var/lib/docker/volumes/jenkins-docker-certs/_data",
+                "Destination": "/certs/client",
+                "Driver": "local",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "jenkins-data",
+                "Source": "/var/lib/docker/volumes/jenkins-data/_data",
+                "Destination": "/var/jenkins_home",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "ad27bd97cd07",
+            "Domainname": "",
+            "User": "jenkins",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "50000/tcp": {},
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "DOCKER_HOST=tcp://docker:2376",
+                "DOCKER_CERT_PATH=/certs/client",
+                "DOCKER_TLS_VERIFY=1",
+                "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "JENKINS_HOME=/var/jenkins_home",
+                "JENKINS_SLAVE_AGENT_PORT=50000",
+                "REF=/usr/share/jenkins/ref",
+                "JENKINS_VERSION=2.414.1",
+                "JENKINS_UC=https://updates.jenkins.io",
+                "JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental",
+                "JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals",
+                "COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log",
+                "JAVA_HOME=/opt/java/openjdk"
+            ],
+            "Cmd": null,
+            "Image": "jenkins-in-docker:2.4",
+            "Volumes": {
+                "/var/jenkins_home": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/usr/bin/tini",
+                "--",
+                "/usr/local/bin/jenkins.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.description": "The Jenkins Continuous Integration and Delivery server",
+                "org.opencontainers.image.licenses": "MIT",
+                "org.opencontainers.image.revision": "e1c29ed1273932d3f118939463440f0ea97fb49f",
+                "org.opencontainers.image.source": "https://github.com/jenkinsci/docker",
+                "org.opencontainers.image.title": "Official Jenkins Docker image",
+                "org.opencontainers.image.url": "https://www.jenkins.io/",
+                "org.opencontainers.image.vendor": "Jenkins project",
+                "org.opencontainers.image.version": "2.414.1"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "82d63a4b3489ad371975f9f9cea18232f73b6739875de9528fa78e1bc6c615ef",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {},
+            "SandboxKey": "/var/run/docker/netns/82d63a4b3489",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "jenkins": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "ad27bd97cd07"
+                    ],
+                    "NetworkID": "957e4eb47ee8e3ccd31aeead4335c29ec3b8e62cd175a5026362e66c8ebafa38",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]

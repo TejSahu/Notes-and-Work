@@ -1,0 +1,7 @@
+docker run -d \
+    --privileged \
+    --name prometheus \
+    --publish 9090:9090 \
+    --network jenkins \
+    --volume prometheus_vol:/etc/prometheus/ \
+    prom/prometheus:main

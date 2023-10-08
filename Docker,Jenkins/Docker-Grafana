@@ -1,0 +1,7 @@
+docker run -d \
+    --privileged \
+    --name Grafana \
+    --publish 3000:3000 \
+    --network jenkins \
+    --volume grafana_vol:/var/lib/grafana \
+    grafana/grafana:main-ubuntu
