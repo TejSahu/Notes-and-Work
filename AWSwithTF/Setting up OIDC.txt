@@ -1,0 +1,5 @@
+For OIDC, first create an account in Terraform Cloud.
+Set up a identity provider in AWS for Terraform Cloud
+        https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/aws-configuration
+
+Export the variables needed.
