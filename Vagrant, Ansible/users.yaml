@@ -1,0 +1,10 @@
+---
+- name: Simple Playbook
+  hosts: Testservers
+  tasks:
+    - name: Create a user on the remote hosts
+      ansible.builtin.user:
+        name: tej
+        comment: "Creating Tej user"
+        shell: /bin/bash
+        create_home: true

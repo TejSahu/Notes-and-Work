@@ -1,0 +1,6 @@
+---
+- name: Copy the release information file
+  hosts: all
+  tasks:
+    - name: Print OS details
+      ansible.builtin.shell: cat /etc/redhat-release

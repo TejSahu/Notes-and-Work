@@ -1,0 +1,31 @@
+---
+- name: Create new user and set password
+  hosts: remote-server
+  become: true
+  vars:
+    new_username: "exampleuser"
+    new_password: "s3cureP@ssw0rd!"
+  tasks:
+    - name: Add new user
+      ansible.builtin.user:
+        name: "{{ new_username }}"
+        shell: /bin/bash
+        create_home: true
+        password: "{{ new_password | password_hash('sha512') }}"
+        state: present
+
+    - name: Set minimum password length
+      ansible.builtin.lineinfile:
+        path: /etc/security/pwquality.conf
+        regexp: ".*minlen.*"
+        line: "minlen=12"
+        state: present
+        backup: true
+      notify:
+        - restart sshd
+
+  handlers:
+    - name: Restart sshd
+      ansible.builtin.service:
+        name: sshd
+        state: restarted

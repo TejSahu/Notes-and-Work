@@ -1,0 +1,16 @@
+---
+- name: Simple Playbook to ping the server and get the OS family
+  hosts: Testservers
+  tasks:
+    - name: Task to ping the hosts
+      ansible.builtin.ping:
+      register: message
+    - name: Ping's response
+      ansible.builtin.debug:
+        var: message
+    # - name: Print OS Information
+    #   ansible.builtin.debug:
+    #     var: ansible_facts # default variable to store the facts ansible collects
+    - name: Another way to print variables from ansible_facts
+      ansible.builtin.debug:
+        msg: "{{ ansible_proc_cmdline }}"
